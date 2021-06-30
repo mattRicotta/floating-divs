@@ -34,12 +34,12 @@ main {
 @media screen and (max-width: 990px) {
   .section-container {flex-wrap: wrap;max-width: 600px;margin: auto;}
   .section-title {max-width: 100%;}
-  .section-container .flexright img {max-width: 100%;}
+  .section-container img {max-width: 100%;}
 }
 .section-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   background-color: blueviolet;
 }
 .section-title {
@@ -50,23 +50,14 @@ main {
   max-width: 100%;
   background-color: chartreuse;
 }
-.section-container .flexleft {
-  display: block;
-  align-self: stretch;
+.section-container .left {
   background-color: darkblue;
-  max-width: 600px;
-  padding: 20px;
 }
-.section-container .flexleft h2,
-.section-container .flexleft p {
-  width: 100%;
-}
-.section-container .flexright {
-  display: block;
-  align-self: flex-start;
+.section-container .right {
   background-color: crimson;
-  padding: 20px;
 }
-.section-container .flexright img {
+.section-container img {
+  max-width: 600px;
   height: auto;
+  padding: 20px;
 }
